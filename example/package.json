@@ -1,0 +1,8 @@
+{
+  "name": "sdd-lab",
+  "version": "0.0.1",
+  "description": "Sandbox para testear el harness SDD end-to-end",
+  "scripts": {
+    "test": "node --test"
+  }
+}

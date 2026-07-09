@@ -1,0 +1,7 @@
+{
+  "slug": "demo",
+  "title": "Utilidad de saludo (demo)",
+  "phase": "archived",
+  "artifacts": { "explore": false, "proposal": true, "spec": true, "design": true, "tasks": true, "apply": true, "verify": true },
+  "updated": "2026-07-02"
+}

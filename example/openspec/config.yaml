@@ -1,0 +1,12 @@
+# openspec/config.yaml — generado por /sdd-init
+project: sdd-lab
+stack:
+  language: javascript
+  runtime: node
+  framework: none
+test_command: "node --test"
+typecheck_command: "none"
+lint_command: "none"
+phases: [explore, proposal, spec, design, tasks, apply, verify, review, archive]
+delivery:
+  max_pr_lines: 400

@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SDD feature state",
+  "description": "Estado de proceso de un feature SDD. Vive en openspec/changes/<slug>/state.json. Es la fuente de verdad del Phase DAG, fuera del chat.",
+  "type": "object",
+  "required": ["slug", "phase", "artifacts"],
+  "properties": {
+    "slug": { "type": "string", "description": "Identificador del feature (kebab-case)." },
+    "title": { "type": "string" },
+    "phase": {
+      "type": "string",
+      "enum": ["explore", "proposal", "spec", "design", "tasks", "apply", "verify", "review", "archived"],
+      "description": "Fase actual en el DAG."
+    },
+    "artifacts": {
+      "type": "object",
+      "description": "Qué artifacts ya se produjeron. Es el gate de dependencias entre fases.",
+      "properties": {
+        "explore": { "type": "boolean" },
+        "proposal": { "type": "boolean" },
+        "spec": { "type": "boolean" },
+        "design": { "type": "boolean" },
+        "tasks": { "type": "boolean" },
+        "apply": { "type": "boolean" },
+        "verify": { "type": "boolean" },
+        "review": { "type": "boolean" }
+      }
+    },
+    "updated": { "type": "string", "description": "Fecha (ISO o YYYY-MM-DD) de la última actualización." }
+  }
+}
