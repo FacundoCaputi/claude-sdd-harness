@@ -72,14 +72,14 @@ El harness es global: se instala una vez en `~/.claude/` y queda disponible en *
 **Con script:**
 
 ```bash
-git clone https://github.com/<tu-usuario>/sdd-harness.git
-cd sdd-harness
+git clone https://github.com/FacundoCaputi/claude-sdd-harness.git
+cd claude-sdd-harness
 bash install.sh          # macOS / Linux
 ```
 
 ```powershell
-git clone https://github.com/<tu-usuario>/sdd-harness.git
-cd sdd-harness
+git clone https://github.com/FacundoCaputi/claude-sdd-harness.git
+cd claude-sdd-harness
 ./install.ps1            # Windows (PowerShell)
 ```
 
